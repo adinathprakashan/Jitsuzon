@@ -1,7 +1,6 @@
-<h1 class="jitsuzon-title">JITSUZON</h1>
 <div class="site-branding">
     <h1 class="jitsuzon-title">JITSUZON</h1>
-    <div class="jitsuzon-subtitle">Nexus of Fractured Realities</div>
+    <div class="jitsuzon-subtitle"> A riveting story of survival, power, and madness in a world engulfed by Catastrophe </div>
     <p class="jitsuzon-description">
         A responsive author platform for <em>Covenant in Pandemonium</em>, where psychological thrillers 
         bleed into reality. Explore fragmented narratives, hidden omens, and the mind of 
