@@ -163,10 +163,7 @@ Jitsuzon – A responsive author platform for Covenant in Pandemonium by Adinath
     </div>
 
     <a href="https://instagram.com/adinath_prakashan" class="instagram-link" target="_blank">Witness the Becoming</a>
-
-    <div class="chat-bubble" onclick="toggleChat()">💬</div>
-    <div id="chatWindow" style="display: none; /* Add chat window styles */"></div>
-
+    
     <script>
         // Typewriter Effect
         const messages = [
