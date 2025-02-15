@@ -8,6 +8,7 @@ Jitsuzon – A responsive author platform for Covenant in Pandemonium by Adinath
     <title>Jitsuzon | A Covenant in Pandemonium</title>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
     <style>
+        :root {
             --neon-pink: #FF00FF;
             --deep-black: #000000;
             --blood-pink: #FF1493;
@@ -70,27 +71,9 @@ Jitsuzon – A responsive author platform for Covenant in Pandemonium by Adinath
         }
 
         @keyframes glitch {
-            0% { text-shadow: 0.05em 0 0 rgba(255,0,0,.75),
-                            -0.025em -0.05em 0 rgba(0,255,0,.75),
-                            0.025em 0.05em 0 rgba(0,0,255,.75); }
-            14% { text-shadow: 0.05em 0 0 rgba(255,0,0,.75),
-                             -0.025em -0.05em 0 rgba(0,255,0,.75),
-                             0.025em 0.05em 0 rgba(0,0,255,.75); }
-            15% { text-shadow: -0.05em -0.025em 0 rgba(255,0,0,.75),
-                              0.025em 0.025em 0 rgba(0,255,0,.75),
-                              -0.05em -0.05em 0 rgba(0,0,255,.75); }
-            49% { text-shadow: -0.05em -0.025em 0 rgba(255,0,0,.75),
-                              0.025em 0.025em 0 rgba(0,255,0,.75),
-                              -0.05em -0.05em 0 rgba(0,0,255,.75); }
-            50% { text-shadow: 0.025em 0.05em 0 rgba(255,0,0,.75),
-                              0.05em 0 0 rgba(0,255,0,.75),
-                              0 -0.05em 0 rgba(0,0,255,.75); }
-            99% { text-shadow: 0.025em 0.05em 0 rgba(255,0,0,.75),
-                              0.05em 0 0 rgba(0,255,0,.75),
-                              0 -0.05em 0 rgba(0,0,255,.75); }
-            100% { text-shadow: -0.025em 0 0 rgba(255,0,0,.75),
-                              -0.025em -0.025em 0 rgba(0,255,0,.75),
-                              -0.025em -0.05em 0 rgba(0,0,255,.75); }
+            0%, 100% { text-shadow: 0.05em 0 0 rgba(255,0,0,.75), -0.025em -0.05em 0 rgba(0,255,0,.75), 0.025em 0.05em 0 rgba(0,0,255,.75); }
+            14%, 49% { text-shadow: -0.05em -0.025em 0 rgba(255,0,0,.75), 0.025em 0.025em 0 rgba(0,255,0,.75), -0.05em -0.05em 0 rgba(0,0,255,.75); }
+            50%, 99% { text-shadow: 0.025em 0.05em 0 rgba(255,0,0,.75), 0.05em 0 0 rgba(0,255,0,.75), 0 -0.05em 0 rgba(0,0,255,.75); }
         }
 
         .update-container {
@@ -101,7 +84,6 @@ Jitsuzon – A responsive author platform for Covenant in Pandemonium by Adinath
             position: relative;
             background: rgba(0,0,0,0.7);
             clip-path: polygon(0 0, 100% 0, 100% 75%, 95% 75%, 95% 100%, 85% 75%, 0 75%);
-            -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 95% 75%, 95% 100%, 85% 75%, 0 75%);
         }
 
         .chat-bubble {
@@ -125,15 +107,6 @@ Jitsuzon – A responsive author platform for Covenant in Pandemonium by Adinath
             100% { transform: scale(1); }
         }
 
-        .instagram-link {
-            position: fixed;
-            bottom: 2rem;
-            left: 2rem;
-            color: var(--neon-pink);
-            text-decoration: none;
-            font-size: 1.2rem;
-        }
-
         .cursor {
             animation: blink 1s infinite;
         }
@@ -142,13 +115,49 @@ Jitsuzon – A responsive author platform for Covenant in Pandemonium by Adinath
             0%, 100% { opacity: 1; }
             50% { opacity: 0; }
         }
+
+        .fancy-button {
+            padding: 12px 24px;
+            font-size: 18px;
+            font-family: 'Oswald', sans-serif;
+            color: var(--neon-pink);
+            background: transparent;
+            border: 2px solid var(--neon-pink);
+            border-radius: 8px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 10px var(--neon-pink), 0 0 20px var(--neon-pink), 0 0 40px var(--neon-pink);
+            margin-top: 20px;
+        }
+
+        .fancy-button:hover {
+            color: var(--deep-black);
+            background: var(--neon-pink);
+            box-shadow: 0 0 20px var(--neon-pink), 0 0 40px var(--neon-pink), 0 0 80px var(--neon-pink);
+        }
+
+        #aboutMe {
+            display: none;
+            margin-top: 20px;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            font-size: 18px;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid var(--neon-pink);
+            border-radius: 8px;
+        }
     </style>
 </head>
 <body>
     <nav class="side-nav">
         <a href="#updates">Manifest</a>
         <a href="#events">Omens</a>
-        <a href="https://instagram.com/adinath_prakashan" target="_blank" rel="noopener noreferrer">Contact Me</a>
+        <a href="https://instagram.com/adinath_prakashan" target="_blank" rel="noopener noreferrer">Contact</a>
     </nav>
 
     <section class="hero">
@@ -171,63 +180,15 @@ Jitsuzon – A responsive author platform for Covenant in Pandemonium by Adinath
         <p style="font-size: 1.5rem;">The stars whisper of impending revelations...</p>
     </section>
 
-    <button id="whoAmIButton" class="fancy-button">
-    Who Am I?
-    </button>
-    <style>
-    .fancy-button {
-        padding: 15px 30px;
-        font-size: 20px;
-        font-family: 'Oswald', sans-serif;
-        color: var(--neon-pink);
-        background: transparent;
-        border: 2px solid var(--neon-pink);
-        border-radius: 8px;
-        cursor: pointer;
-        position: relative;
-        overflow: hidden;
-        transition: all 0.3s ease;
-        box-shadow: 0 0 10px var(--neon-pink), 0 0 20px var(--neon-pink), 0 0 40px var(--neon-pink);
-        margin-top: 20px; /* Added to match your original margin */
-    }
-
-    .fancy-button::before {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 300%;
-        height: 300%;
-        background: radial-gradient(circle, rgba(255, 0, 255, 0.3), transparent);
-        transform: translate(-50%, -50%) scale(0);
-        transition: transform 0.5s ease;
-        border-radius: 50%;
-        z-index: 0;
-    }
-
-    .fancy-button:hover {
-        color: var(--deep-black);
-        background: var(--neon-pink);
-        box-shadow: 0 0 20px var(--neon-pink), 0 0 40px var(--neon-pink), 0 0 80px var(--neon-pink);
-    }
-
-    .fancy-button:hover::before {
-        transform: translate(-50%, -50%) scale(1);
-    }
-
-    .fancy-button span {
-        position: relative;
-        z-index: 1;
-    }
-    </style>
-
-    <div id="aboutMe" style="display: none; margin-top: 20px; font-family: Arial, sans-serif; line-height: 1.6; font-size: 18px;">
-        <p>I’m <strong>Adinath Prakashan</strong>, a mechanical engineering student with a passion for storytelling. While my academic life revolves around engineering, my mind is constantly building worlds, crafting characters, and exploring the depths of post-apocalyptic fiction.</p>
-        <p>My love for movies, anime, and TV series (<em>Friends, The Big Bang Theory, One Piece, The Walking Dead</em>) has shaped the way I think about stories. Now, I’m creating my own.</p>
-        <p>One of my favorite storytelling techniques is foreshadowing. I love weaving hidden clues that only make sense later.For example, in Covenant in Pandemonium, the man with four arms and the thousands of rats? They aren’t hallucinations. They are real. But my protagonist, Richard, doesn’t react as most people would. Why? Because his mind can no longer process reality as it should.I don’t just want to tell a thrilling story—I want to create an experience that makes people think.</p>
+    <div style="text-align: center; margin: 40px 0;">
+        <button id="whoAmIButton" class="fancy-button">Who Am I?</button>
     </div>
 
-    <a href="https://instagram.com/adinath_prakashan" class="instagram-link" target="_blank" rel="noopener noreferrer">Witness the Becoming</a>
+    <div id="aboutMe">
+        <p>I’m <strong>Adinath Prakashan</strong>, a mechanical engineering student with a passion for storytelling. While my academic life revolves around engineering, my mind is constantly building worlds, crafting characters, and exploring the depths of post-apocalyptic fiction.</p>
+        <p>My love for movies, anime, and TV series (<em>Friends, The Big Bang Theory, One Piece, The Walking Dead</em>) has shaped the way I think about stories. Now, I’m creating my own.</p>
+        <p>One of my favorite storytelling techniques is foreshadowing. I love weaving hidden clues that only make sense later. For example, in <em>Covenant in Pandemonium</em>, the man with four arms and the thousands of rats? They aren’t hallucinations. They are real. But my protagonist, Richard, doesn’t react as most people would. Why? Because his mind can no longer process reality as it should. I don’t just want to tell a thrilling story—I want to create an experience that makes people think.</p>
+    </div>
 
     <div class="chat-bubble" onclick="window.location.href='mailto:adinathprakashan@gmail.com'">
         💬
@@ -284,3 +245,4 @@ Jitsuzon – A responsive author platform for Covenant in Pandemonium by Adinath
     </script>
 </body>
 </html>
+            
