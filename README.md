@@ -139,7 +139,7 @@ Jitsuzon – A responsive author platform for Covenant in Pandemonium by Adinath
     <nav class="side-nav">
         <a href="#updates">Manifest</a>
         <a href="#events">Omens</a>
-        <a <a href="https://instagram.com/adinath_prakashan" target="_blank">Contact Me</a>
+        <a <a href="https://instagram.com/adinath_prakashan" target="_blank">Contact Me
     </nav>
 
     <section class="hero">
@@ -161,9 +161,11 @@ Jitsuzon – A responsive author platform for Covenant in Pandemonium by Adinath
         <h2 style="color: var(--neon-pink); margin-bottom: 2rem;">Coming Shadows</h2>
         <p style="font-size: 1.5rem;">The stars whisper of impending revelations...</p>
     </div>
-<button id="whoAmIButton">Who Am I?</button>
+<button id="whoAmIButton" style="padding: 15px 30px; font-size: 20px; cursor: pointer; background-color: #333; color: #fff; border: none; border-radius: 8px; margin-top: 20px;">
+  Who Am I?
+</button>
 
-<div id="aboutMe" style="display: none; margin-top: 20px; font-family: Arial, sans-serif; line-height: 1.6;">
+<div id="aboutMe" style="display: none; margin-top: 20px; font-family: Arial, sans-serif; line-height: 1.6; font-size: 18px;">
   <p>I’m <strong>Adinath Prakashan</strong>, a mechanical engineering student with a passion for storytelling. While my academic life revolves around engineering, my mind is constantly building worlds, crafting characters, and exploring the depths of post-apocalyptic fiction.</p>
   <p>I’ve never been an avid reader—strangely enough, I’ve never even finished a novel. But that hasn’t stopped me from writing one. My love for movies, anime, and TV series (<em>Friends, The Big Bang Theory, One Piece, The Walking Dead</em>) has shaped the way I think about stories. Now, I’m creating my own.</p>
 </div>
