@@ -1,5 +1,6 @@
 # Jitsuzon
 Jitsuzon – A responsive author platform for Covenant in Pandemonium by Adinath Prakashan.
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +8,6 @@ Jitsuzon – A responsive author platform for Covenant in Pandemonium by Adinath
     <title>Jitsuzon | A Covenant in Pandemonium</title>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
     <style>
-        :root {
             --neon-pink: #FF00FF;
             --deep-black: #000000;
             --blood-pink: #FF1493;
@@ -171,13 +171,60 @@ Jitsuzon – A responsive author platform for Covenant in Pandemonium by Adinath
         <p style="font-size: 1.5rem;">The stars whisper of impending revelations...</p>
     </section>
 
-    <button id="whoAmIButton" style="padding: 15px 30px; font-size: 20px; cursor: pointer; background-color: #333; color: #fff; border: none; border-radius: 8px; margin-top: 20px;">
-        Who Am I?
+    <button id="whoAmIButton" class="fancy-button">
+    Who Am I?
     </button>
+    <style>
+    .fancy-button {
+        padding: 15px 30px;
+        font-size: 20px;
+        font-family: 'Oswald', sans-serif;
+        color: var(--neon-pink);
+        background: transparent;
+        border: 2px solid var(--neon-pink);
+        border-radius: 8px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        box-shadow: 0 0 10px var(--neon-pink), 0 0 20px var(--neon-pink), 0 0 40px var(--neon-pink);
+        margin-top: 20px; /* Added to match your original margin */
+    }
+
+    .fancy-button::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 300%;
+        height: 300%;
+        background: radial-gradient(circle, rgba(255, 0, 255, 0.3), transparent);
+        transform: translate(-50%, -50%) scale(0);
+        transition: transform 0.5s ease;
+        border-radius: 50%;
+        z-index: 0;
+    }
+
+    .fancy-button:hover {
+        color: var(--deep-black);
+        background: var(--neon-pink);
+        box-shadow: 0 0 20px var(--neon-pink), 0 0 40px var(--neon-pink), 0 0 80px var(--neon-pink);
+    }
+
+    .fancy-button:hover::before {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    .fancy-button span {
+        position: relative;
+        z-index: 1;
+    }
+    </style>
 
     <div id="aboutMe" style="display: none; margin-top: 20px; font-family: Arial, sans-serif; line-height: 1.6; font-size: 18px;">
         <p>I’m <strong>Adinath Prakashan</strong>, a mechanical engineering student with a passion for storytelling. While my academic life revolves around engineering, my mind is constantly building worlds, crafting characters, and exploring the depths of post-apocalyptic fiction.</p>
-        <p>I’ve never been an avid reader—strangely enough, I’ve never even finished a novel. But that hasn’t stopped me from writing one. My love for movies, anime, and TV series (<em>Friends, The Big Bang Theory, One Piece, The Walking Dead</em>) has shaped the way I think about stories. Now, I’m creating my own.</p>
+        <p>My love for movies, anime, and TV series (<em>Friends, The Big Bang Theory, One Piece, The Walking Dead</em>) has shaped the way I think about stories. Now, I’m creating my own.</p>
+        <p>One of my favorite storytelling techniques is foreshadowing. I love weaving hidden clues that only make sense later.For example, in Covenant in Pandemonium, the man with four arms and the thousands of rats? They aren’t hallucinations. They are real. But my protagonist, Richard, doesn’t react as most people would. Why? Because his mind can no longer process reality as it should.I don’t just want to tell a thrilling story—I want to create an experience that makes people think.</p>
     </div>
 
     <a href="https://instagram.com/adinath_prakashan" class="instagram-link" target="_blank" rel="noopener noreferrer">Witness the Becoming</a>
