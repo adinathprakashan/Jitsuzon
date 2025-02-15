@@ -185,6 +185,8 @@ Jitsuzon – A responsive author platform for Covenant in Pandemonium by Adinath
             }
         }
 
+<div class="chat-bubble" onclick="window.location.href='mailto:adinathprakashan@gmail.com'">💬</div>
+
         function eraseMessage() {
             if (charIndex > 0) {
                 typewriter.textContent = messages[messageIndex].substring(0, charIndex-1);
