@@ -139,7 +139,7 @@ Jitsuzon – A responsive author platform for Covenant in Pandemonium by Adinath
     <nav class="side-nav">
         <a href="#updates">Manifest</a>
         <a href="#events">Omens</a>
-        <a <a href="https://instagram.com/adinath_prakashan" target="_blank">Contact Me
+        <a <a href="https://instagram.com/adinath_prakashan" target="_blank">Contact Me</a>
     </nav>
 
     <section class="hero">
