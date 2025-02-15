@@ -1,11 +1,88 @@
-
-    <div class="jitsuzon-subtitle"> A riveting story of survival, power, and madness in a world engulfed by Catastrophe </div>
+<div class="site-branding">
+    <h1 class="jitsuzon-title">JITSUZON</h1>
+    <div class="jitsuzon-subtitle">A riveting story of survival, power, and madness in a world engulfed by Catastrophe</div>
     <p class="jitsuzon-description">
         A responsive author platform for <em>Covenant in Pandemonium</em>, where psychological thrillers 
         bleed into reality. Explore fragmented narratives, hidden omens, and the mind of 
         Adinath Prakashan – where engineering logic collides with apocalyptic storytelling.
     </p>
 </div>
+
+<style>
+    /* Add these styles to your existing CSS */
+    .site-branding {
+        text-align: center;
+        padding: 4rem 2rem 0;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .jitsuzon-title {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 4.5rem;
+        font-weight: 700;
+        background: linear-gradient(45deg, var(--neon-pink), var(--blood-pink));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-transform: uppercase;
+        letter-spacing: 8px;
+        margin-bottom: 1rem;
+        animation: hologram 3s infinite alternate;
+    }
+
+    @keyframes hologram {
+        0% { 
+            opacity: 0.9;
+            text-shadow: 0 0 10px var(--neon-pink);
+        }
+        100% { 
+            opacity: 1;
+            text-shadow: 0 0 25px var(--neon-pink),
+                       0 0 35px var(--blood-pink);
+        }
+    }
+
+    .jitsuzon-subtitle {
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.5rem;
+        color: var(--neon-pink);
+        margin: 1rem 0;
+        text-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+        letter-spacing: 1px;
+    }
+
+    .jitsuzon-description {
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.25rem;
+        line-height: 1.6;
+        color: rgba(255, 255, 255, 0.9);
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 1rem;
+        border-top: 2px solid var(--neon-pink);
+        border-bottom: 2px solid var(--neon-pink);
+        position: relative;
+    }
+
+    .jitsuzon-description::before {
+        content: "◈";
+        position: absolute;
+        left: -30px;
+        top: -15px;
+        color: var(--neon-pink);
+        font-size: 1.5rem;
+        text-shadow: 0 0 10px var(--neon-pink);
+    }
+
+    .jitsuzon-description::after {
+        content: "◈";
+        position: absolute;
+        right: -30px;
+        bottom: -15px;
+        color: var(--neon-pink);
+        font-size: 1.5rem;
+        text-shadow: 0 0 10px var(--neon-pink);
+    }
 
 <style>
     /* Add these styles to your existing CSS */
