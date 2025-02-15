@@ -1,6 +1,5 @@
 # Jitsuzon
 Jitsuzon – A responsive author platform for Covenant in Pandemonium by Adinath Prakashan.
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
