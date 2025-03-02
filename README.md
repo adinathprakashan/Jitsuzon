@@ -1,176 +1,16 @@
-<div class="site-branding">
-    <h1 class="jitsuzon-title">JITSUZON</h1>
-    <div class="jitsuzon-subtitle">A riveting story of survival, power, and madness in a world engulfed by Catastrophe</div>
-    <p class="jitsuzon-description">
-        A responsive author platform for <em>Covenant in Pandemonium</em>, where psychological thrillers 
-        bleed into reality. Explore fragmented narratives, hidden omens, and the mind of 
-        Adinath Prakashan – where engineering logic collides with apocalyptic storytelling.
-    </p>
-</div>
-
-<style>
-    /* Add these styles to your existing CSS */
-    .site-branding {
-        text-align: center;
-        padding: 4rem 2rem 0;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    .jitsuzon-title {
-        font-family: 'Orbitron', sans-serif;
-        font-size: 4.5rem;
-        font-weight: 700;
-        background: linear-gradient(45deg, var(--neon-pink), var(--blood-pink));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        text-transform: uppercase;
-        letter-spacing: 8px;
-        margin-bottom: 1rem;
-        animation: hologram 3s infinite alternate;
-    }
-
-    @keyframes hologram {
-        0% { 
-            opacity: 0.9;
-            text-shadow: 0 0 10px var(--neon-pink);
-        }
-        100% { 
-            opacity: 1;
-            text-shadow: 0 0 25px var(--neon-pink),
-                       0 0 35px var(--blood-pink);
-        }
-    }
-
-    .jitsuzon-subtitle {
-        font-family: 'Oswald', sans-serif;
-        font-size: 1.5rem;
-        color: var(--neon-pink);
-        margin: 1rem 0;
-        text-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
-        letter-spacing: 1px;
-    }
-
-    .jitsuzon-description {
-        font-family: 'Oswald', sans-serif;
-        font-size: 1.25rem;
-        line-height: 1.6;
-        color: rgba(255, 255, 255, 0.9);
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 1rem;
-        border-top: 2px solid var(--neon-pink);
-        border-bottom: 2px solid var(--neon-pink);
-        position: relative;
-    }
-
-    .jitsuzon-description::before {
-        content: "◈";
-        position: absolute;
-        left: -30px;
-        top: -15px;
-        color: var(--neon-pink);
-        font-size: 1.5rem;
-        text-shadow: 0 0 10px var(--neon-pink);
-    }
-
-    .jitsuzon-description::after {
-        content: "◈";
-        position: absolute;
-        right: -30px;
-        bottom: -15px;
-        color: var(--neon-pink);
-        font-size: 1.5rem;
-        text-shadow: 0 0 10px var(--neon-pink);
-    }
-
-<style>
-    /* Add these styles to your existing CSS */
-    .site-branding {
-        text-align: center;
-        padding: 4rem 2rem 0;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    .jitsuzon-title {
-        font-family: 'Orbitron', sans-serif;
-        font-size: 4.5rem;
-        font-weight: 700;
-        background: linear-gradient(45deg, var(--neon-pink), var(--blood-pink));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        text-transform: uppercase;
-        letter-spacing: 8px;
-        margin-bottom: 1rem;
-        animation: hologram 3s infinite alternate;
-    }
-
-    @keyframes hologram {
-        0% { 
-            opacity: 0.9;
-            text-shadow: 0 0 10px var(--neon-pink);
-        }
-        100% { 
-            opacity: 1;
-            text-shadow: 0 0 25px var(--neon-pink),
-                       0 0 35px var(--blood-pink);
-        }
-    }
-
-    .jitsuzon-subtitle {
-        font-family: 'Zen Tokyo Zoo', cursive;
-        font-size: 2rem;
-        color: var(--neon-pink);
-        margin-bottom: 2rem;
-        text-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
-    }
-
-    .jitsuzon-description {
-        font-family: 'Oswald', sans-serif;
-        font-size: 1.25rem;
-        line-height: 1.6;
-        color: rgba(255, 255, 255, 0.9);
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 1rem;
-        border-top: 2px solid var(--neon-pink);
-        border-bottom: 2px solid var(--neon-pink);
-        position: relative;
-    }
-
-    .jitsuzon-description::before {
-        content: "◈";
-        position: absolute;
-        left: -30px;
-        top: -15px;
-        color: var(--neon-pink);
-        font-size: 1.5rem;
-        text-shadow: 0 0 10px var(--neon-pink);
-    }
-
-    .jitsuzon-description::after {
-        content: "◈";
-        position: absolute;
-        right: -30px;
-        bottom: -15px;
-        color: var(--neon-pink);
-        font-size: 1.5rem;
-        text-shadow: 0 0 10px var(--neon-pink);
-    }
-</style>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jitsuzon | A Covenant in Pandemonium</title>
+    <title>JITSUZON | Covenant in Pandemonium</title>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
     <style>
         :root {
             --neon-pink: #FF00FF;
             --deep-black: #000000;
             --blood-pink: #FF1493;
+            --cyber-teal: #00fff9;
         }
 
         * {
@@ -184,222 +24,304 @@
             color: white;
             font-family: 'Oswald', sans-serif;
             overflow-x: hidden;
+            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="none" stroke="%23FF00FF" stroke-width="2"/></svg>') 12 12, auto;
         }
 
-        .side-nav {
+        /* Cyber Matrix Background */
+        .matrix-bg {
             position: fixed;
-            right: 2%;
-            top: 50%;
-            transform: translateY(-50%);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.1;
+            pointer-events: none;
+        }
+
+        /* Neuromorphic Navigation */
+        .neuro-nav {
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            display: flex;
+            gap: 1.5rem;
             z-index: 1000;
         }
 
-        .side-nav a {
-            display: block;
-            writing-mode: vertical-rl;
-            transform: rotate(180deg);
-            color: white;
+        .neuro-nav a {
+            padding: 1rem;
+            border-radius: 15px;
+            background: var(--deep-black);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5),
+                       -5px -5px 10px rgba(255, 0, 255, 0.1);
+            transition: all 0.3s ease;
             text-decoration: none;
-            margin: 1.5rem 0;
-            font-size: 1.2rem;
-            transition: color 0.3s;
-        }
-
-        .side-nav a:hover {
             color: var(--neon-pink);
         }
 
-        .hero {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: radial-gradient(circle, rgba(255,0,255,0.1) 0%, rgba(0,0,0,1) 70%);
-            position: relative;
+        .neuro-nav a:hover {
+            box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+                       inset -5px -5px 10px rgba(255, 0, 255, 0.1);
         }
 
-        .title {
+        /* Holographic Title */
+        .hologram-title {
             font-family: 'Zen Tokyo Zoo', cursive;
-            font-size: 4.5rem;
+            font-size: 5vw;
             text-align: center;
             text-transform: uppercase;
-            background: linear-gradient(45deg, var(--neon-pink), var(--blood-pink));
+            position: relative;
+            margin: 15vh 0;
+            perspective: 1000px;
+        }
+
+        .hologram-title span {
+            display: inline-block;
+            background: linear-gradient(45deg, var(--neon-pink), var(--cyber-teal));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            animation: glitch 2s infinite;
+            animation: hologram-float 6s infinite ease-in-out;
         }
 
-        @keyframes glitch {
-            0%, 100% { text-shadow: 0.05em 0 0 rgba(255,0,0,.75), -0.025em -0.05em 0 rgba(0,255,0,.75), 0.025em 0.05em 0 rgba(0,0,255,.75); }
-            14%, 49% { text-shadow: -0.05em -0.025em 0 rgba(255,0,0,.75), 0.025em 0.025em 0 rgba(0,255,0,.75), -0.05em -0.05em 0 rgba(0,0,255,.75); }
-            50%, 99% { text-shadow: 0.025em 0.05em 0 rgba(255,0,0,.75), 0.05em 0 0 rgba(0,255,0,.75), 0 -0.05em 0 rgba(0,0,255,.75); }
+        @keyframes hologram-float {
+            0%, 100% { transform: translateY(0) rotateX(0deg) rotateY(0deg); }
+            25% { transform: translateY(-10px) rotateX(15deg) rotateY(15deg); }
+            50% { transform: translateY(0) rotateX(0deg) rotateY(-15deg); }
+            75% { transform: translateY(10px) rotateX(-15deg) rotateY(0deg); }
         }
 
-        .update-container {
-            padding: 4rem;
-            border: 3px solid var(--neon-pink);
-            margin: 5rem auto;
-            max-width: 800px;
-            position: relative;
-            background: rgba(0,0,0,0.7);
-            clip-path: polygon(0 0, 100% 0, 100% 75%, 95% 75%, 95% 100%, 85% 75%, 0 75%);
-        }
-
-        .chat-bubble {
-            position: fixed;
-            bottom: 2rem;
-            right: 2rem;
-            background: var(--neon-pink);
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-            100% { transform: scale(1); }
-        }
-
-        .cursor {
-            animation: blink 1s infinite;
-        }
-
-        @keyframes blink {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0; }
-        }
-
-        .fancy-button {
-            padding: 12px 24px;
-            font-size: 18px;
-            font-family: 'Oswald', sans-serif;
-            color: var(--neon-pink);
-            background: transparent;
+        /* Content Sections */
+        .cyber-section {
+            max-width: 1200px;
+            margin: 10rem auto;
+            padding: 2rem;
             border: 2px solid var(--neon-pink);
-            border-radius: 8px;
-            cursor: pointer;
+            position: relative;
+            background: rgba(0, 0, 0, 0.9);
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 98% 100%, 0 100%);
+        }
+
+        .cyber-section::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, var(--neon-pink), var(--cyber-teal));
+            z-index: -1;
+            animation: border-glow 3s infinite alternate;
+        }
+
+        @keyframes border-glow {
+            0% { opacity: 0.3; }
+            100% { opacity: 0.7; }
+        }
+
+        /* Quantum Interface */
+        .quantum-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+
+        .quantum-card {
+            padding: 2rem;
+            background: rgba(255, 0, 255, 0.05);
+            border: 1px solid var(--neon-pink);
+            transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
+        }
+
+        .quantum-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px var(--neon-pink);
+        }
+
+        /* Contact Section */
+        .contact-section {
+            text-align: center;
+            margin: 5rem 0;
+        }
+
+        .contact-section a {
+            display: inline-block;
+            margin: 1rem;
+            padding: 1rem 2rem;
+            border: 2px solid var(--neon-pink);
+            color: var(--neon-pink);
+            text-decoration: none;
             transition: all 0.3s ease;
-            box-shadow: 0 0 10px var(--neon-pink), 0 0 20px var(--neon-pink), 0 0 40px var(--neon-pink);
-            margin-top: 20px;
         }
 
-        .fancy-button:hover {
-            color: var(--deep-black);
+        .contact-section a:hover {
             background: var(--neon-pink);
-            box-shadow: 0 0 20px var(--neon-pink), 0 0 40px var(--neon-pink), 0 0 80px var(--neon-pink);
+            color: var(--deep-black);
+            box-shadow: 0 0 20px var(--neon-pink);
         }
 
-        #aboutMe {
-            display: none;
-            margin-top: 20px;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            font-size: 18px;
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.8);
-            border: 1px solid var(--neon-pink);
-            border-radius: 8px;
+        /* Mobile-Friendly Scrolling */
+        @media (max-width: 768px) {
+            .hologram-title {
+                font-size: 10vw;
+                margin: 10vh 0;
+            }
+
+            .neuro-nav {
+                top: 1rem;
+                right: 1rem;
+                gap: 1rem;
+            }
+
+            .neuro-nav a {
+                padding: 0.5rem;
+                font-size: 0.9rem;
+            }
+
+            .cyber-section {
+                margin: 5rem auto;
+                padding: 1rem;
+            }
+
+            .quantum-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
-    <nav class="side-nav">
-        <a href="#updates">Manifest</a>
-        <a href="#events">Omens</a>
-        <a href="https://instagram.com/adinath_prakashan" target="_blank" rel="noopener noreferrer">Contact</a>
+    <canvas id="neural-canvas"></canvas>
+    <div class="time-distortion"></div>
+    <div class="matrix-bg"></div>
+
+    <nav class="neuro-nav">
+        <a href="#world">The World</a>
+        <a href="#king">The Cannibal King</a>
+        <a href="#truth">The Truth</a>
     </nav>
 
-    <section class="hero">
-        <div>
-            <h1 class="title">A Covenant<br>in<br>Pandemonium</h1>
-            <div class="type-text" style="text-align: center; margin-top: 2rem; font-size: 1.5rem;">
-                <span id="typewriter"></span><span class="cursor">|</span>
+    <h1 class="hologram-title">
+        <span>Covenant</span>
+        <span style="animation-delay: -2s">in</span>
+        <span style="animation-delay: -4s">Pandemonium</span>
+    </h1>
+
+    <section class="cyber-section" id="world">
+        <h2>The World of Pandemonium</h2>
+        <div class="quantum-grid">
+            <div class="quantum-card">
+                <h3>Survival Through Intellect</h3>
+                <p>In a world ravaged by Catastrophe, brute strength is no longer enough. The factions that thrive are those that master deception, strategy, and the ever-shifting power dynamics of a broken world.</p>
+            </div>
+            <div class="quantum-card">
+                <h3>Warring Factions</h3>
+                <p>From the shadowy Syndicates to the nomadic Free Cities, alliances are fragile, and betrayal is the only constant. Who will outwit whom in this deadly game of survival?</p>
             </div>
         </div>
     </section>
 
-    <section class="update-container" id="updates">
-        <h2 style="color: var(--neon-pink); margin-bottom: 2rem;">Author's Transmission</h2>
-        <p style="font-size: 1.8rem;">Are you ready for a psychological thriller?</p>
-        <p style="margin-top: 2rem; opacity: 0.8;">The veil will lift soon...</p>
+    <section class="cyber-section" id="king">
+        <h2>The Cannibal King</h2>
+        <div class="quantum-grid">
+            <div class="quantum-card">
+                <h3>Villain or Visionary?</h3>
+                <p>The King of Guanjuato is a figure shrouded in mystery. Is he a ruthless tyrant, or a pragmatic leader willing to do whatever it takes to unite a fractured world?</p>
+            </div>
+            <div class="quantum-card">
+                <h3>Layers of Deception</h3>
+                <p>Beneath the propaganda and the tales of his brutality lies a mind as sharp as a blade. What is his true endgame, and who will survive long enough to uncover it?</p>
+            </div>
+        </div>
     </section>
 
-    <section class="update-container" id="events">
-        <h2 style="color: var(--neon-pink); margin-bottom: 2rem;">Coming Shadows</h2>
-        <p style="font-size: 1.5rem;">The stars whisper of impending revelations...</p>
+    <section class="cyber-section" id="truth">
+        <h2>The Greatest Revelation</h2>
+        <div class="quantum-grid">
+            <div class="quantum-card">
+                <h3>Understanding the World</h3>
+                <p>In the end, the question is not who controls the world, but who truly understands it. And in a world of chaos, is understanding a blessing—or a curse?</p>
+            </div>
+            <div class="quantum-card">
+                <h3>The Price of Knowledge</h3>
+                <p>For those who seek the truth, the cost may be more than they can bear. Will the pursuit of understanding lead to salvation—or destruction?</p>
+            </div>
+        </div>
     </section>
 
-    <div style="text-align: center; margin: 40px 0;">
-        <button id="whoAmIButton" class="fancy-button">Who Am I?</button>
-    </div>
-
-    <div id="aboutMe">
-        <p>I’m <strong>Adinath Prakashan</strong>, a mechanical engineering student with a passion for storytelling. While my academic life revolves around engineering, my mind is constantly building worlds, crafting characters, and exploring the depths of post-apocalyptic fiction.</p>
-        <p>My love for movies, anime, and TV series (<em>Friends, The Big Bang Theory, One Piece, The Walking Dead</em>) has shaped the way I think about stories. Now, I’m creating my own.</p>
-        <p>One of my favorite storytelling techniques is foreshadowing. I love weaving hidden clues that only make sense later. For example, in <em>Covenant in Pandemonium</em>, the man with four arms and the thousands of rats? They aren’t hallucinations. They are real. But my protagonist, Richard, doesn’t react as most people would. Why? Because his mind can no longer process reality as it should. I don’t just want to tell a thrilling story—I want to create an experience that makes people think.</p>
-    </div>
-
-    <div class="chat-bubble" onclick="window.location.href='mailto:adinathprakashan@gmail.com'">
-        💬
-    </div>
+    <section class="contact-section">
+        <h2>Connect With Me</h2>
+        <a href="https://instagram.com/adinath_prakashan" target="_blank">Instagram</a>
+        <a href="mailto:adinathprakashan@gmail.com">Email Me</a>
+    </section>
 
     <script>
-        // Typewriter Effect
-        const messages = [
-            "Where reality fractures...",
-            "A mind-bending journey awaits...",
-            "The pandemonium approaches..."
-        ];
-        let messageIndex = 0;
-        let charIndex = 0;
-        const typewriter = document.getElementById('typewriter');
-        
-        function typeMessage() {
-            if (charIndex < messages[messageIndex].length) {
-                typewriter.textContent += messages[messageIndex].charAt(charIndex);
-                charIndex++;
-                setTimeout(typeMessage, 100);
-            } else {
-                setTimeout(eraseMessage, 2000);
+        // Neural Network Visualization
+        const canvas = document.getElementById('neural-canvas');
+        const ctx = canvas.getContext('2d');
+        let nodes = [];
+
+        function initNeural() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            
+            for(let i = 0; i < 50; i++) {
+                nodes.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    radius: Math.random() * 3 + 1,
+                    dx: (Math.random() - 0.5) * 0.5,
+                    dy: (Math.random() - 0.5) * 0.5
+                });
             }
+
+            animate();
         }
 
-        function eraseMessage() {
-            if (charIndex > 0) {
-                typewriter.textContent = messages[messageIndex].substring(0, charIndex - 1);
-                charIndex--;
-                setTimeout(eraseMessage, 50);
-            } else {
-                messageIndex = (messageIndex + 1) % messages.length;
-                setTimeout(typeMessage, 500);
-            }
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            nodes.forEach(node => {
+                // Update positions
+                node.x += node.dx;
+                node.y += node.dy;
+                
+                // Draw nodes
+                ctx.beginPath();
+                ctx.arc(node.x, node.y, node.radius, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(255, 0, 255, ${node.radius/4})`;
+                ctx.fill();
+                
+                // Draw connections
+                nodes.forEach(other => {
+                    const distance = Math.hypot(node.x - other.x, node.y - other.y);
+                    if(distance < 150) {
+                        ctx.beginPath();
+                        ctx.moveTo(node.x, node.y);
+                        ctx.lineTo(other.x, other.y);
+                        ctx.strokeStyle = `rgba(255, 0, 255, ${0.3 - distance/500})`;
+                        ctx.lineWidth = 0.5;
+                        ctx.stroke();
+                    }
+                });
+            });
+            
+            requestAnimationFrame(animate);
         }
 
-        typeMessage();
+        // Initialize effects
+        initNeural();
 
-        // Who Am I? Button Functionality
-        document.getElementById('whoAmIButton').addEventListener('click', function() {
-            const aboutMe = document.getElementById('aboutMe');
-            aboutMe.style.display = aboutMe.style.display === 'none' ? 'block' : 'none';
-        });
-
-        // Dynamic Background
-        document.addEventListener('mousemove', (e) => {
-            const x = e.clientX / window.innerWidth;
-            const y = e.clientY / window.innerHeight;
-            document.body.style.background = `radial-gradient(at ${x * 100}% ${y * 100}%, 
-                rgba(255,0,255,0.1) 0%, 
-                rgba(0,0,0,1) 70%)`;
+        // Smooth Scrolling for Mobile
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
         });
     </script>
 </body>
